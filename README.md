@@ -1,3 +1,3 @@
-#KetogenictTherapies.com
+#KetogenicTherapies.com
 
 Built with AngularJS 
