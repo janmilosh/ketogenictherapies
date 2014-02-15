@@ -550,7 +550,7 @@ FileETag None
 # Change http://example.com (at the end of the last RewriteRule) to your website url
  
 <IfModule mod_headers.c>
-    #RequestHeader set X-Prerender-Token "tyCTncpQKe6cM284G4V3"
+    RequestHeader set X-Prerender-Token "tyCTncpQKe6cM284G4V3"
 </IfModule>
  
 <IfModule mod_rewrite.c>
