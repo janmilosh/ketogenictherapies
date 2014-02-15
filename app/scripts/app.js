@@ -4,13 +4,16 @@ angular.module('ketoApp', [
   'ngSanitize',
   'ngRoute'
 ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+.config(function ($routeProvider, $locationProvider) {
+
+  $locationProvider.hashPrefix('!').html5Mode(false);
+  
+  $routeProvider
+    .when('/', {
+      templateUrl: 'views/main.html',
+      controller: 'MainController'
+    })
+    .otherwise({
+      redirectTo: '/'
+    });
+});
