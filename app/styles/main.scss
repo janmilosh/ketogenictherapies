@@ -11,7 +11,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 }
 
 body {
-  background: #EDEFEE url(../images/background.jpg) repeat-y 0px 90px;
+  background: #EDEFEE url("../backgrounds/background.jpg") repeat-y 0px 90px;
   font-size: 16px;
   color: #444;
 }
@@ -110,7 +110,7 @@ button[type="submit"] {
 
 @media screen and (max-width: 992px) {
   body {
-    background: #EDEFEE url(../images/background-small.jpg) repeat-y 0px 90px;
+    background: #EDEFEE url("../backgrounds/background-small.jpg") repeat-y 0px 90px;
     min-height: 0;
   }
 
