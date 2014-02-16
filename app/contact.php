@@ -15,7 +15,7 @@ $data = json_decode(file_get_contents("php://input"), true);
 
 // Build the arguments for sending the message.
 $to = "janmilosh@gmail.com";
-$subj = "Keto contact form response: " . $data["name"];
+$subj = "Keto contact form message from: " . $data["name"];
 $message  = "Name: " . $data["name"] . "\n";
 $message .= "Email: " . $data["email"] . "\n";
 $message .= "Message: " . $data["message"] . "\n";
@@ -42,5 +42,4 @@ if( $res === true ) {
   echo json_encode($return);
 }
 
-// And we"re out.
 ?>

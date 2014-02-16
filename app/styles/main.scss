@@ -15,8 +15,21 @@ body {
   padding-bottom: 20px;
 }
 
+.container-fluid {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 h1.title {
   font-family: 'Libre Baskerville', serif;
+}
+
+.contact-form {
+  h2 {
+    margin: 0 0 30px;
+    text-align: center;
+  }
 }
 
 header,
@@ -46,6 +59,7 @@ header h3 {
   background: #5fbd4c;
   padding-bottom: 67px;
   color: white;
+  border-radius: 5px;
   h1 {
     font-size: 54px;
     line-height: 1.2;
