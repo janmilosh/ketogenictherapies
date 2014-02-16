@@ -10,7 +10,23 @@ angular.module('ketoApp', [
   
   $routeProvider
     .when('/', {
-      templateUrl: 'views/main.html',
+      templateUrl: 'views/home.html',
+      controller: 'MainController'
+    })
+    .when('/program', {
+      templateUrl: 'views/program.html',
+      controller: 'MainController'
+    })
+    .when('/program', {
+      templateUrl: 'views/research.html',
+      controller: 'MainController'
+    })
+    .when('/kit', {
+      templateUrl: 'views/kit.html',
+      controller: 'MainController'
+    })
+    .when('/about', {
+      templateUrl: 'views/about.html',
       controller: 'MainController'
     })
     .otherwise({
