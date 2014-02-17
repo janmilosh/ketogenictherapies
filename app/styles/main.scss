@@ -11,7 +11,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 }
 
 body {
-  background: #EDEFEE url("../backgrounds/background.jpg") repeat-y 0px 90px;
+  background: #EDEFEE url("../backgrounds/background.jpg") repeat-y;
   font-size: 16px;
   color: #444;
 }
@@ -24,6 +24,34 @@ body {
 .container-fluid {
   margin-left: 100px;
   padding: 0 15px;
+}
+
+.nav > li > a {
+  color: #fff;
+  padding: 5px 8px;
+  margin: 0 10px;
+  font-size: 18px;
+  border-radius: 3px;
+  &:hover {
+    background: #93B3A2;
+    color: #fff;
+  }
+}
+
+.nav-pills > li + li {
+  margin-left: 0;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav-pills > li {
+  margin-bottom: 8px;
+}
+
+.nav-pills > li {
+  float: right;
 }
 
 h1, h2, h3 {
@@ -55,6 +83,9 @@ h1.title {
   font-family: 'Libre Baskerville', serif;
   color: #fff;
   margin: 13px 0;
+  width: 340px;
+  padding-left: 15px;
+  float: left;
 }
 
 img {
@@ -77,15 +108,24 @@ form {
 }
 
 header {
-  padding: 15px 0;
+  padding: 20px 0;
   background: #A1C1B0;
-  height: 90px;
+  min-height: 100px;
 }
 
 footer {
   padding: 20px 0;
-  border-top: 12px solid #A1C1B0;
+  border-top: 2px solid #A1C1B0;
   background: #f4f4f4;
+}
+
+.subfooter {
+  background: #A1C1B0;
+  padding: 15px 0;
+  p {
+    color: #fff;
+    margin: 0;
+  }
 }
 
 .btn {
@@ -110,7 +150,7 @@ button[type="submit"] {
 
 @media screen and (max-width: 992px) {
   body {
-    background: #EDEFEE url("../backgrounds/background-small.jpg") repeat-y 0px 90px;
+    background: #EDEFEE url("../backgrounds/background-small.jpg") repeat-y;
     min-height: 0;
   }
 
@@ -119,7 +159,25 @@ button[type="submit"] {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 680px) {
+  h1.title {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .nav {
+    width: 548px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 638px) {
+
+  .nav {
+    width: 280px;
+  }
 
   h1.title {
     font-size: 25px;
@@ -146,7 +204,40 @@ button[type="submit"] {
     min-height: 0;
   }
 
+  header {
+    padding: 10px 0;
+  }
+
+  .nav > li > a {
+    background: #93B3A2;
+    padding: 5px 8px;
+    margin: 0 10px;
+    &:hover {
+    }
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  h1.title {
+    text-align: center;
+  }
+
   .container-fluid {
     margin-left: 0;
+  }
+}
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+  
+  body {
+    font-size: 150%;
   }
 }

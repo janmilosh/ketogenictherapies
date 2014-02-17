@@ -17,7 +17,7 @@ angular.module('ketoApp', [
       templateUrl: 'views/program.html',
       controller: 'MainController'
     })
-    .when('/program', {
+    .when('/research', {
       templateUrl: 'views/research.html',
       controller: 'MainController'
     })
