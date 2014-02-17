@@ -29,6 +29,10 @@ angular.module('ketoApp', [
       templateUrl: 'views/about.html',
       controller: 'MainController'
     })
+    .when('/contact', {
+      templateUrl: 'views/contact.html',
+      controller: 'ContactFormController'
+    })
     .otherwise({
       redirectTo: '/'
     });

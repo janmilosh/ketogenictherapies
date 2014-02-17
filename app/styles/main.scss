@@ -183,18 +183,6 @@ button[type="submit"] {
     font-size: 25px;
     margin: 13px 0;
   }
-
-  h1 {
-    font-size: 25px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -209,11 +197,7 @@ button[type="submit"] {
   }
 
   .nav > li > a {
-    background: #93B3A2;
-    padding: 5px 8px;
     margin: 0 10px;
-    &:hover {
-    }
   }
 
   .nav {
@@ -237,7 +221,11 @@ button[type="submit"] {
   only screen and (                min-resolution: 192dpi),
   only screen and (                min-resolution: 2dppx) { 
   
-  body {
-    font-size: 150%;
+  a {
+    font-size: 19px;
+  }
+  
+  p {
+    font-size: 19px;
   }
 }
