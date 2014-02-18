@@ -70,16 +70,35 @@ h2 {
   font-size: 25px;
 }
 
-h3 {
+#contact h2 {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.panel-body {
+  padding-bottom: 5px;
 }
 
 .panel h2 {
+  font-size: 20px;
   margin-bottom: 0;
 }
 
 .panel h3 {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+.btn.btn-default:hover {
+  color: #666;
+  background: #eee;
+}
+
+.btn.btn-default {
+  margin-bottom: 10px;
 }
 
 h1.title {
@@ -107,7 +126,7 @@ label {
 }
 
 form {
-  height: 365px;
+  height: 355px;
 }
 
 .header {
@@ -148,7 +167,7 @@ textarea,
 input[type="text"],
 input[type="email"],
 button[type="submit"] {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 992px) {
