@@ -11,7 +11,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 }
 
 body {
-  background: #EDEFEE url("../backgrounds/background.jpg") repeat-y;
+  background: #EDEFEE url("../backgrounds/background-small.jpg") repeat-y;
   font-size: 16px;
   color: #444;
 }
@@ -22,7 +22,7 @@ body {
 }
 
 .container-fluid {
-  margin-left: 100px;
+  margin-left: 50px;
   padding: 0 15px;
 }
 
@@ -131,7 +131,7 @@ form {
 
 .header {
   padding: 20px 0;
-  background: #A1C1B0;
+  background: #86A594;
   min-height: 100px;
 }
 
@@ -168,17 +168,6 @@ input[type="text"],
 input[type="email"],
 button[type="submit"] {
   margin-bottom: 10px;
-}
-
-@media screen and (max-width: 992px) {
-  body {
-    background: #EDEFEE url("../backgrounds/background-small.jpg") repeat-y;
-    min-height: 0;
-  }
-
-  .container-fluid {
-    margin-left: 50px;
-  }
 }
 
 @media screen and (max-width: 835px) {
