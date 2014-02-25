@@ -1,45 +1,41 @@
-<div ng-controller="ContactFormController" id="contact">
-	<div class="panel panel-default">
-	  <div class="panel-heading">
-	    <h2>Contact Form</h2>
-	  </div>
-	  <div class="panel-body">
-			<form class="form-horizontal" name="contact-form">
-				<label for="name">Name</label>
-				<input
-					type="text"
-					class="form-control"
-					ng-model="contact.name"
-					id="name"
-					name="name"
-					placeholder="Your name"
-					required>
-				<label for="email">Email Address</label>
-				<input
-					type="email"
-					class="form-control"
-					ng-model="contact.email"
-					id="email"
-					name="email"
-					placeholder="Your email address"
-					required>
-				<label for="message">Message</label>
-				<textarea
-					rows="6"
-					class="form-control"
-					ng-model="contact.message"
-					id="message"
-					name="message"
-					placeholder="Please input a brief message."
-					required>
-				</textarea>
-				<button
-						type="submit"
-						class="btn pull-right"
-						ng-click="submit()"
-						>Send
-				</button>
-			</form>
-		</div>
+<h1 class="title">Contact the dietician</h1>
+<div class="white-background">
+	<div ng-controller="ContactFormController" id="contact">
+		<form class="form-horizontal" name="contact-form">
+			<label for="name">Name</label>
+			<input
+				type="text"
+				class="form-control"
+				ng-model="contact.name"
+				id="name"
+				name="name"
+				placeholder="Your name"
+				required>
+			<label for="email">Email Address</label>
+			<input
+				type="email"
+				class="form-control"
+				ng-model="contact.email"
+				id="email"
+				name="email"
+				placeholder="Your email address"
+				required>
+			<label for="message">Message</label>
+			<textarea
+				rows="6"
+				class="form-control"
+				ng-model="contact.message"
+				id="message"
+				name="message"
+				placeholder="Please input a brief message."
+				required>
+			</textarea>
+			<button
+					type="submit"
+					class="btn pull-right"
+					ng-click="submit()"
+					>Send
+			</button>
+		</form>
 	</div>
 </div>

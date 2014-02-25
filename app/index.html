@@ -26,63 +26,51 @@
 
   <!-- Add your site or application content here -->
 
+  <div class="header clearfix">
+    <div class="container-fluid">
+      <div class="row">
+        <div ng-include="'views/header.html'"></div>
+      </div>
+    </div>
+  </div> 
   <div class="container-fluid">
     <div class="row">
-      <div class="header clearfix" ng-include="'views/header.html'"></div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 col-md-7 col-sm-8 add-padding white-background">
+      <div class="col-sm-8">
         <div ng-view></div>
       </div>
-      <div class="col-lg-6 col-md-5 col-sm-4">
-        <div class="row">
-          <div class="col-lg-5 col-md-10">
-            <button slide-toggle type="button" class="slide-out-button btn btn-default btn-block">Frequently asked questions</button>
-          </div>
+      <div class="col-sm-4">
+        <div ng-include="'views/classes.html'"></div>
+        <button slide-toggle type="button" class="slide-out-button btn btn-default btn-block">FAQ</button>
+        <div class="slideout">
+          <div ng-include="'views/faq.html'"></div>
         </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="slideout">
-              <p>Q. Will the diet cure my cancer?</p>
-              <p>A. No one can answer that. There is enough evidence to make a trial of the KGD worthwhile for many people.
-              <p>Q. What if my physician will not support me?</p>
-              <p>A. Please find one who will. Physician involvement is required for your safety and you cannot enroll without it.</p>
-              <p>Q. Is this a research study?</p>
-              <p>A. No. But data will be collected and potentially published. By signing the release of liability form, you are also allowing Ketogenic Therapies, LLC and Denise Potter to use any data collected during your enrollment for research purposes.</p>
-              <p>Q. Can I use the KGD for weight loss?</p>
-              <p>A. You could, but I do not recommend it. The KGD is not a balanced diet, nor is it considered to be “healthy”.  It is a medical therapy that is used to treat numerous diseases. While it is possible to lose weight this way, there is an extremely high probability that you will regain any weight lost once you resume your previous diet.</p>
-              <p>Q. Why are all of the fees due near the beginning?</p>
-              <p>A. The fee schedule is set up to reflect the RDN involvement. A bulk of the hours are spent in preparation and initiation of the KGD.</p>
-              <p>Q. Why is the program so expensive/cheap?</p>
-              <p>A. It is anticipated that the RDN (Registered Dietitian Nutritionist) will spend up to 30 hours working directly with each patient, their physician, or their case over the course of 1 year. Fair wages for a RDN consultant are $100-$200/hour.</p>
-              <p>Q. Will insurance cover this program?</p>
-              <p>A. No. Your health insurance carrier will not pay for an experimental treatment.</p>
-            </div>
-          </div>            
-        </div>
-        <div class="row">
-          <div class="col-lg-5 col-md-10 add-padding">  
-            <div ng-include="'views/notices.html'"></div>
-            <div ng-include="'views/downloads.html'"></div>
-          </div>
-          <div class="col-lg-7 col-md-10 add-padding hidden-xs">
-            <div ng-include="'views/contact.html'"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="info-box">
-              <p>The KGD is a medical therapy, most often used to treat patients with Medication Resistant Epilepsy.  When used to treat epilepsy, the KGD is closely monitored by dietitians, physicians, and the healthcare team.  When using the KGD as an experimental treatment for cancer, it should also be closely monitored, not undertake by individuals without medical experience or access to routing lab work and necessary prescription supplements.</p>
-            </div>
-          </div>
+        <div ng-include="'views/downloads.html'"></div>          
+      </div>
+    </div>
+  </div>
+  <div class="notice">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="notice-inner" ng-include="'views/notice.html'"></div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="footer clearfix" ng-include="'views/footer.html'"></div>
+
+  </div> 
+  
+  <div class="footer clarfix">
+    <div class="container-fluid">
+      <div class="row">
+        <div ng-include="'views/footer.html'"></div>
+      </div>
     </div>
-    <div class="row">
-      <div class="subfooter clearfix" ng-include="'views/subfooter.html'"></div>
+  </div>  
+  <div class="subfooter clarfix">
+    <div class="container-fluid">
+      <div class="row">
+        <div ng-include="'views/subfooter.html'"></div>
+      </div>
     </div>
   </div>
 

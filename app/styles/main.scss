@@ -3,6 +3,17 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import 'sass-bootstrap/lib/bootstrap';
 @import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
 
+$cream: #FDF3E7;
+$red: #C63D0F;
+$orange: #F37F2E;
+$green: #6C9F50;
+$pink: #B33E6A;
+$lightGrey: #8E8E8E;
+$mediumGrey: #534D4F;
+$darkGrey: #3B3738;
+$gold: #DAC45B;
+$teal: #44A1B2;
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -11,17 +22,17 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 }
 
 body {
-  background: #EDEFEE url("../backgrounds/background-small.jpg") repeat-y;
+  background: $teal;
   font-size: 16px;
   color: #444;
 }
 
 a {
-  color: #444;
+  color: $teal;
   text-decoration: underline;
   &:hover {
   text-decoration: none;
-  color: #444;
+  color: $teal;
   }
 }
 
@@ -43,7 +54,8 @@ a.btn {
 }
 
 .container-fluid {
-  margin-left: 50px;
+  max-width: 1080px;
+  margin: 0 auto;
   padding: 0 15px;
 }
 
@@ -54,7 +66,7 @@ a.btn {
   font-size: 18px;
   border-radius: 3px;
   &:hover {
-    background: #93B3A2;
+    background: $teal;
   }
   &:focus {
     background: none;
@@ -79,7 +91,7 @@ a.btn {
 
 h1, h2, h3 {
   margin: 0 0 16px;
-  color: #758A7F;
+  color: $darkGrey;
 }
 
 h1 {
@@ -113,12 +125,18 @@ ul.plain {
   font-size: 18px;
 }
 
-.info-box {
-  background: #758A7F;
-  color: white;
+.notice {
+  .notice-inner {
+  background: white;
+  padding: 10px;
+  border: 4px solid $pink;
   border-radius: 5px;
-  padding: 10px 10px 5px;
-  margin-bottom: 20px;
+  }
+  p {
+    line-height: 1.6;
+  }
+  background: $lightGrey;
+  padding: 40px 0;
 }
 
 td {
@@ -144,12 +162,16 @@ td {
 }
 
 h1.title {
-  font-family: 'Libre Baskerville', serif;
   color: #fff;
-  margin: 13px 0;
-  width: 420px;
-  padding-left: 15px;
+  font-size: 24px;
+}
+
+h1.logo {
+  font-family: 'Libre Baskerville', serif;
+  width:420px;
+  color: white;
   float: left;
+  font-size: 24px;
 }
 
 img {
@@ -172,19 +194,18 @@ form {
 }
 
 .header {
-  padding: 20px 0;
-  background: #86A594;
-  min-height: 100px;
+  padding: 10px 0;
+  background: $mediumGrey;
 }
 
 .footer {
   padding: 20px 0;
-  border-top: 2px solid #A1C1B0;
-  background: #f4f4f4;
+  border-top: 4px solid $green;
+  background: white;
 }
 
 .subfooter {
-  background: #A1C1B0;
+  background: $darkGrey;
   padding: 15px 0;
   p {
     color: #fff;
@@ -193,17 +214,17 @@ form {
 }
 
 .btn, .btn.btn-default {
-  background: #A1C1B0;
+  background: $red;
   color: white;
   font-size: 16px;
   box-shadow: none;
-  border: 1px solid #9DAAA3;
+  border: 1px solid $darkGrey;
   &:hover {
-    background: #86A594;
+    background: $red;
     color: white;
   }
   &:active {
-    background: #86A594;
+    background: $red;
     color: white;
   }
 }
