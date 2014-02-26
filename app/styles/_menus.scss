@@ -17,24 +17,48 @@ a.home-button {
   background: $green;
 }
 
+.nav > li > a:hover.home-button {
+  background: darken($green, 10%);
+}
+
 a.contact-button {
   background: $gold;
+}
+
+.nav > li > a:hover.contact-button {
+  background: darken($gold, 10%);
 }
 
 a.kit-button {
   background: $orange;
 }
 
+.nav > li > a:hover.kit-button {
+  background: darken($orange, 10%);
+}
+
 a.diet-button {
   background: $pink;
+}
+
+.nav > li > a:hover.diet-button {
+  background: darken($pink, 10%);
 }
 
 a.program-button {
   background: $lightGrey;
 }
 
+.nav > li > a:hover.program-button {
+  background: darken($lightGrey, 10%);
+}
+
 a.research-button {
   background: $blue;
+}
+
+.nav > li > a:hover.research-button {
+  background: darken($blue, 10%);
 }
 
 .nav-pills > li + li {
