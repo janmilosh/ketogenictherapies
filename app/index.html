@@ -28,38 +28,45 @@
 
   <div class="header clearfix">
     <div class="container-fluid">
-      <div class="row">
-        <div ng-include="'views/header.html'"></div>
-      </div>
+      <div ng-include="'views/header.html'"></div>
     </div>
   </div> 
-  <div class="container-fluid">
+  <div class="container-fluid main-content">
     <div class="row">
       <div class="col-sm-8">
         <div ng-view></div>
       </div>
       <div class="col-sm-4">
-        <div ng-include="'views/classes.html'"></div>
-        <button slide-toggle type="button" class="slide-out-button btn btn-default btn-block">FAQ</button>
-        <div class="slideout">
-          <div ng-include="'views/faq.html'"></div>
+        <div class="classes" ng-include="'views/classes.html'"></div>
+      </div>
+    </div>
+  </div>
+  <div class="supplement clearfix">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <div ng-include="'views/signup.html'"></div>
         </div>
-        <div ng-include="'views/downloads.html'"></div>          
+        <div class="col-sm-6">
+          <div ng-include="'views/downloads.html'"></div>
+          <button slide-toggle type="button" class="slide-out-button btn btn-default btn-block">FAQ</button>
+          <div class="slideout">
+            <div ng-include="'views/faq.html'"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="notice">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-8">
-          <div class="notice-inner" ng-include="'views/notice.html'"></div>
+        <div class="col-sm-8 col-sm-offset-2">
+          <div ng-include="'views/notice.html'"></div>
         </div>
       </div>
     </div>
-
-  </div> 
-  
-  <div class="footer clarfix">
+  </div>
+  <div class="footer clearfix">
     <div class="container-fluid">
       <div class="row">
         <div ng-include="'views/footer.html'"></div>

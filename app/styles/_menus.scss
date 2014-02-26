@@ -1,0 +1,71 @@
+.nav > li > a {
+  color: #fff;
+  padding: 5px 8px;
+  margin: 0 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  &:hover {
+    background: $teal;
+  }
+  &:focus {
+    background: none;
+  }
+}
+
+a.home-button {
+  background: $green;
+}
+
+a.contact-button {
+  background: $gold;
+}
+
+a.kit-button {
+  background: $orange;
+}
+
+a.diet-button {
+  background: $pink;
+}
+
+a.program-button {
+  background: $lightGrey;
+}
+
+a.research-button {
+  background: $blue;
+}
+
+.nav-pills > li + li {
+  margin-left: 0;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav-pills > li {
+  margin-bottom: 8px;
+}
+
+.nav > li > a {
+  width: 100px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.menu-left {
+  width: 330px;
+  float: left;
+}
+
+.menu-right {
+  width: 330px;
+  float: right;
+}
+
+.menu {
+  width: 660px;
+  float: right;
+}
