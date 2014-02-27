@@ -6,9 +6,9 @@
 }
 
 body {
-  background: $teal;
+  background: $deepBlue;
   font-size: 16px;
-  color: #444;
+  color: $darkGrey;
 }
 
 p, a {
@@ -105,11 +105,11 @@ h3 {
 }
 
 a {
-  color: $teal;
+  color: $deepBlue;
   text-decoration: underline;
   &:hover {
   text-decoration: none;
-  color: $teal;
+  color: $deepBlue;
   }
 }
 
@@ -165,9 +165,10 @@ ul.plain {
 .notice {
   p {
     line-height: 1.6;
+    font-size: 18px;
     color: white;
   }
-  background: $green;
+  background: $pink;
   padding: 50px 0;
 }
 
@@ -182,15 +183,6 @@ td {
 .not-bold {
   font-weight: normal;
   text-align: right;
-}
-
-.btn.btn-default:hover {
-  color: #666;
-  background: #eee;
-}
-
-.btn.btn-default {
-  margin-bottom: 10px;
 }
 
 img {
@@ -223,18 +215,19 @@ img.pull-left {
   }
 }
 
-.btn, .btn.btn-default {
-  background: $red;
+.btn {
+  background: $gold;
   color: white;
   font-size: 16px;
+  text-transform: uppercase;
   box-shadow: none;
-  border: 1px solid $darkGrey;
+  border: 1px solid darken($gold, 10%);
   &:hover {
-    background: $red;
+    background: darken($gold, 10%);
     color: white;
   }
   &:active {
-    background: $red;
+    background: $gold;
     color: white;
   }
 }
@@ -243,8 +236,33 @@ img.pull-left {
   outline: none;
 }
 
+.slide-out-button,
+.download-button {
+  width: 280px;
+  display: block;
+  
+  height: 60px;
+}
+
+.download-button {
+  background: $orange;
+  margin: 40px auto 0;
+  padding-top: 18px;
+  border: 1px solid darken($orange, 10%);
+  &:hover, &:active, &:focus {
+    background: darken($orange, 10%);
+    color: white;
+  }
+}
+
 .slide-out-button {
-  margin-top: 20px;
+  background: $green;
+  margin: 30px auto;
+  border: 1px solid darken($green, 10%);
+  &:hover, &:active, &:focus {
+    background: darken($green, 10%);
+    color: white;
+  }
 }
 
 .slideout {
