@@ -1,49 +1,53 @@
-@media screen and (max-width: 950px) {
-  h1.title {
+@media screen and (max-width: 1000px) {
+  h1.logo {
     width: 100%;
+    float: none;
     padding: 0;
     text-align: center;
   }
 
-  .nav {
-    width: 466px;
-    margin-left: auto;
-    margin-right: auto;
+  .menu {
+    float: none;
+    margin: 6px auto 3px;
   }
 }
 
 @media screen and (max-width: 767px) {
+  h1.logo {
+    margin: 0 0 16px 0;
+  }
+
+  .menu-left,
+  .menu-right {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
   .nav {
-    width: 566px;
+    margin: 0;
+  }
+
+  .menu-left {
+    margin-bottom: 0;
+  }
+
+  .header {
+    margin: 0;
   }
 }
 
 @media screen and (max-width: 638px) {
 
-  .nav {
-    width: 295px;
-  }
 
-  h1.title {
-    font-size: 22px;
 
-    margin: 13px 0;
-  }
+ 
 }
 
 @media screen and (max-width: 400px) {
-
-  .header {
-    padding: 10px 0;
-  }
-
-  .nav > li > a {
-    margin: 0 10px;
-  }
-
-  .nav {
-    margin-top: 10px;
-  }
 
   h1.title {
     text-align: center;
