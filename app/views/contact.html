@@ -1,40 +1,51 @@
-<h1 class="title">Contact the dietician</h1>
-<div class="white-background">
-	<h2 class="contact">For information or to set up an appointment</h2>
-	<div ng-controller="ContactFormController" id="contact">
-		<form class="form-horizontal" name="contact-form">
-			<label for="name">Name</label>
-			<input
-				type="text"
-				class="form-control"
-				ng-model="contact.name"
-				id="name"
-				name="name"
-				placeholder="Your name"
-				required>
-			<label for="email">Email Address</label>
-			<input
-				type="email"
-				class="form-control"
-				ng-model="contact.email"
-				id="email"
-				name="email"
-				placeholder="Your email address"
-				required>
-			<label for="message">Message</label>
-			<textarea
-				rows="6"
-				class="form-control"
-				ng-model="contact.message"
-				id="message"
-				name="message"
-				placeholder="Please input a brief message."
-				required>
-			</textarea>
-			<button
-				type="submit"
-				class="btn pull-right"
-				ng-click="submit()">Send</button>
-		</form>
+<div class="row">
+	<div class="col-sm-8">
+		<h1 class="title">Contact the dietician</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-8">
+		<div class="white-background">
+			<h2 class="contact">For information or to set up an appointment</h2>
+			<div ng-controller="ContactFormController" id="contact">
+				<form class="form-horizontal" name="contact-form">
+					<label for="name">Name</label>
+					<input
+						type="text"
+						class="form-control"
+						ng-model="contact.name"
+						id="name"
+						name="name"
+						placeholder="Your name"
+						required>
+					<label for="email">Email Address</label>
+					<input
+						type="email"
+						class="form-control"
+						ng-model="contact.email"
+						id="email"
+						name="email"
+						placeholder="Your email address"
+						required>
+					<label for="message">Message</label>
+					<textarea
+						rows="6"
+						class="form-control"
+						ng-model="contact.message"
+						id="message"
+						name="message"
+						placeholder="Please input a brief message."
+						required>
+					</textarea>
+					<button
+						type="submit"
+						class="btn pull-right"
+						ng-click="submit()">Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-4">
+	  <div class="classes" ng-include="'views/classes.html'"></div>
 	</div>
 </div>
