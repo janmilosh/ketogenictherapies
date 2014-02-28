@@ -38,23 +38,50 @@
   .header {
     margin: 0;
   }
-}
 
-@media screen and (max-width: 638px) {
+  .classes {
+    margin-top: 30px;
+  }
 
+  .main-content {
+    margin-bottom: 30pxp
+  }
 
-
- 
+  .supplement {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
 }
 
 @media screen and (max-width: 400px) {
 
   h1.title {
+    font-size: 26px;
     text-align: center;
+  }
+
+  h1.logo a {
+    font-size: 20px;
   }
 
   .container-fluid {
     margin-left: 0;
+  }
+
+  .menu-left,
+  .menu-right {
+    width: 285px;
+  }
+
+  .nav > li >a {
+    width: 95px;
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .nav > li > a,
+  .nav-pills > li > a {
+    border-radius: 0;
   }
 }
 
