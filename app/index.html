@@ -20,15 +20,28 @@
   <!-- endbuild -->
 </head>
 <body ng-app="ketoApp">
-  <!--[if lt IE 8]>
+  <!--[if lt IE 9]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-
-  <!-- Add your site or application content here -->
-
   <div class="header clearfix">
     <div class="container-fluid">
-      <div ng-include="'views/header.html'"></div>
+      <h1 class="logo"><a href="#!/">Ketogenic Therapies, LLC</a></h1>
+      <div class="menu clearfix">
+        <div class="menu-left clearfix">
+          <ul class="nav nav-pills">
+            <li><a class="home-button" ng-href="#!/">Home</a></li>
+            <li><a class="diet-button" ng-href="#!/diet">The Diet</a></li>
+            <li><a class="program-button" ng-href="#!/program">Program</a></li>
+          </ul>
+        </div>
+        <div class="menu-right clearfix">
+          <ul class="nav nav-pills">
+            <li><a class="kit-button" ng-href="#!/kit">Kit</a></li>
+            <li><a class="research-button" ng-href="#!/research">Research</a></li>
+            <li><a class="contact-button" ng-href="#!/contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div> 
   <div class="container-fluid main-content">
@@ -38,13 +51,36 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <div ng-include="'views/signup.html'"></div>
+          <h2>How do I sign up?</h2>
+          <ol>
+            <li>Fill out the contact form and schedule your free 15 minute informational call.</li>
+            <li>Discuss the Ketogenic Diet with your physician.</li>
+            <li>Send the referral form and diet description to your physician.</li>
+            <li>Schedule your initial diet overview consultation call.</li>
+            <li>Accurately track your food and fluid intake for 3 days on <a href="http://www.livestrong.com/myplate/">www.livestrong.com/myplate</a> or a similar website and email to your dietician.</li>
+            <li>Once physician referral has been returned, schedule class or individual session.  In person education is desired, but Skype is available for long-distance participants.</li>
+            <li>Get your fasting lab work done and results emailed to the dietician as soon as possible.</li>
+            <li>Review <a href="http://www.charliefoundation.org">www.charliefoundation.org</a> for additional information about the KGD.</li>
+          </ol>
         </div>
         <div class="col-sm-6">
-          <div ng-include="'views/downloads.html'"></div>
+          <a href="downloads/referral-form.pdf" title="Download pdf" target="_blank" class="btn download-button" role="button">Physician referral form</a>
           <button slide-toggle type="button" class="slide-out-button btn">Frequently asked Questions</button>
           <div class="slideout">
-            <div ng-include="'views/faq.html'"></div>
+            <p>Q. Will the diet cure my cancer?</p>
+            <p>A. No one can answer that. There is enough evidence to make a trial of the KGD worthwhile for many people.
+            <p>Q. What if my physician will not support me?</p>
+            <p>A. Please find one who will. Physician involvement is required for your safety and you cannot enroll without it.</p>
+            <p>Q. Is this a research study?</p>
+            <p>A. No. But data will be collected and potentially published. By signing the release of liability form, you are also allowing Ketogenic Therapies, LLC and Denise Potter to use any data collected during your enrollment for research purposes.</p>
+            <p>Q. Can I use the KGD for weight loss?</p>
+            <p>A. You could, but I do not recommend it. The KGD is not a balanced diet, nor is it considered to be “healthy”.  It is a medical therapy that is used to treat numerous diseases. While it is possible to lose weight this way, there is an extremely high probability that you will regain any weight lost once you resume your previous diet.</p>
+            <p>Q. Why are all of the fees due near the beginning?</p>
+            <p>A. The fee schedule is set up to reflect the RDN involvement. A bulk of the hours are spent in preparation and initiation of the KGD.</p>
+            <p>Q. Why is the program so expensive/cheap?</p>
+            <p>A. It is anticipated that the RDN (Registered Dietitian Nutritionist) will spend up to 30 hours working directly with each patient, their physician, or their case over the course of 1 year. Fair wages for a RDN consultant are $100-$200/hour.</p>
+            <p>Q. Will insurance cover this program?</p>
+            <p>A. No. Your health insurance carrier will not pay for an experimental treatment.</p>
           </div>
         </div>
       </div>
@@ -54,7 +90,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
-          <div ng-include="'views/notice.html'"></div>
+          <p><strong>The Ketogenic Diet</strong> is a medical therapy, most often used to treat patients with Medication Resistant Epilepsy.  When used to treat epilepsy, the KGD is closely monitored by dietitians, physicians, and the healthcare team.  When using the KGD as an experimental treatment for cancer, it should also be closely monitored, not undertaken by individuals without medical experience or access to routine lab work and necessary prescription supplements.</p>
         </div>
       </div>
     </div>
@@ -62,18 +98,27 @@
   <div class="footer clearfix">
     <div class="container-fluid">
       <div class="row">
-        <div ng-include="'views/footer.html'"></div>
+        <div class="col-xs-12">
+          <h3>Denise Potter RD, CSP, CDE</h3>
+        </div>
+        <div class="col-sm-6">
+          <img class="pull-left" src="images/denise.jpg">
+          <p>Denise has been a Registered Dietitian for 24 years.  She has been administering the Ketogenic Diet to children with epilepsy and other conditions at the University of Michigan CS Mott Children's Hospital for 7 years.  Prior to her interest in the Ketogenic Diet, she specialized in Diabetes Education.  She has been a CDE (Certified Diabetes Educator) for 17 years.</p>
+        </div>
+        <div class="col-sm-5">
+          <p>Most recently she attained the CSP credential (Certified Specialist in Pediatrics).</p>
+          <p>Denise received her BS in Dietetics from Michigan State University and completed her Dietetic Internship at the University of Arkansas for Medical Sciences.</p>
+        </div>
       </div>
     </div>
   </div>  
-  <div class="subfooter clarfix">
+  <div class="subfooter clearfix">
     <div class="container-fluid">
       <div class="row">
-        <div ng-include="'views/subfooter.html'"></div>
+        <p ng-controller="DateController" class="text-center">&copy;{{date}} Ketogenic Therapies, LLC</p>
       </div>
     </div>
   </div>
-
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
