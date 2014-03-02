@@ -4,7 +4,7 @@ angular.module('ketoApp')
 
 .directive('slideToggle', function() {
   return {
-    link: function (scope, ele) {    
+    link: function (scope, ele) {
       ele.click(function () {
         ele.next().slideToggle(1000);
       });
@@ -18,15 +18,28 @@ angular.module('ketoApp')
         ele.slideToggle(1000);
       });
     }
-  }
+  };
 })
 .directive('toTop', function() {
   return {
     link: function(scope, ele) {
       ele.click(function() {
-        $('html, body').animate({
-          scrollTop: $("#header").offset().top
+        $('body').animate({
+          scrollTop: $('#header').offset().top
         }, 500);
+      });
+    }
+  };
+})
+.directive('toVideo', function($timeout) {
+  return {
+    link: function(scope, ele) {
+      ele.click(function() {
+        $timeout(function(next, current) {
+          $('body').animate({
+            scrollTop: $('#video').offset().top
+          }, 500);
+        }, 600);
       });
     }
   };
