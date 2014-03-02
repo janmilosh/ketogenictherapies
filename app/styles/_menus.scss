@@ -13,11 +13,11 @@
 }
 
 a.home-button {
-  background: $green;
+  background: $pink;
 }
 
 .nav > li > a:hover.home-button {
-  background: darken($green, 10%);
+  background: darken($pink, 10%);
 }
 
 a.contact-button {
@@ -29,27 +29,27 @@ a.contact-button {
 }
 
 a.kit-button {
-  background: $orange;
-}
-
-.nav > li > a:hover.kit-button {
-  background: darken($orange, 10%);
-}
-
-a.diet-button {
-  background: $pink;
-}
-
-.nav > li > a:hover.diet-button {
-  background: darken($pink, 10%);
-}
-
-a.program-button {
   background: $lightGrey;
 }
 
-.nav > li > a:hover.program-button {
+.nav > li > a:hover.kit-button {
   background: darken($lightGrey, 10%);
+}
+
+a.diet-button {
+  background: $green;
+}
+
+.nav > li > a:hover.diet-button {
+  background: darken($green, 10%);
+}
+
+a.program-button {
+  background: $orange;
+}
+
+.nav > li > a:hover.program-button {
+  background: darken($orange, 10%);
 }
 
 a.research-button {

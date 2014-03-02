@@ -51,6 +51,14 @@
     padding-bottom: 30px;
     padding-top: 30px;
   }
+
+  .download-button {
+    margin: 35px auto 0;
+  }
+
+  .slide-out-button {
+    margin: 15px auto;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -93,11 +101,7 @@
   only screen and (                min-resolution: 192dpi),
   only screen and (                min-resolution: 2dppx) { 
   
-  a {
-    font-size: 19px;
-  }
-  
-  p {
+  a, p, ol, ul {
     font-size: 19px;
   }
 }

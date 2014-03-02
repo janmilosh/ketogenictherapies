@@ -6,7 +6,16 @@ angular.module('ketoApp')
   return {
     link: function (scope, ele) {      
       ele.click(function () {
-        $('.slideout').slideToggle(1000);
+        ele.next().slideToggle(1000);
+      });
+    }
+  };
+})
+.directive('slideClosed', function() {
+  return {
+    link: function (scope, ele) {      
+      ele.click(function () {
+        ele.slideToggle(1000);
       });
     }
   };
