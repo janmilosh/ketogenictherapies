@@ -4,7 +4,7 @@ angular.module('ketoApp')
 
 .directive('slideToggle', function() {
   return {
-    link: function (scope, ele) {      
+    link: function (scope, ele) {    
       ele.click(function () {
         ele.next().slideToggle(1000);
       });
@@ -13,11 +13,10 @@ angular.module('ketoApp')
 })
 .directive('slideClosed', function() {
   return {
-    link: function (scope, ele) {      
+    link: function (scope, ele) {
       ele.click(function () {
         ele.slideToggle(1000);
       });
     }
   };
 });
-
