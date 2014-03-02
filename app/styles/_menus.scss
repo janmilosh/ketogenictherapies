@@ -20,12 +20,22 @@ a.home-button {
   background: darken($pink, 10%);
 }
 
+.nav > li > a:active.home-button,
+.nav > li > a:focus.home-button {
+  background: $pink;
+}
+
 a.contact-button {
   background: $gold;
 }
 
 .nav > li > a:hover.contact-button {
   background: darken($gold, 10%);
+}
+
+.nav > li > a:active.contact-button,
+.nav > li > a:focus.contact-button {
+  background: $gold;
 }
 
 a.kit-button {
@@ -36,12 +46,22 @@ a.kit-button {
   background: darken($lightGrey, 10%);
 }
 
+.nav > li > a:active.kit-button,
+.nav > li > a:focus.kit-button {
+  background: $lightGrey;
+}
+
 a.diet-button {
   background: $green;
 }
 
 .nav > li > a:hover.diet-button {
   background: darken($green, 10%);
+}
+
+.nav > li > a:active.diet-button,
+.nav > li > a:focus.diet-button {
+  background: $green;
 }
 
 a.program-button {
@@ -52,12 +72,22 @@ a.program-button {
   background: darken($orange, 10%);
 }
 
+.nav > li > a:active.program-button,
+.nav > li > a:focus.program-button {
+  background: $orange;
+}
+
 a.research-button {
   background: $blue;
 }
 
 .nav > li > a:hover.research-button {
   background: darken($blue, 10%);
+}
+
+.nav > li > a:active.research-button,
+.nav > li > a:focus.research-button {
+  background: $blue;
 }
 
 .nav-pills > li + li {
