@@ -23,7 +23,8 @@
   <!--[if lt IE 9]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <div class="header clearfix">
+<div ng-controller="MainController">
+  <div id="header" class="header clearfix">
     <div class="container-fluid">
       <h1 class="logo"><a href="#!/">Ketogenic Therapies, LLC</a></h1>
       <div class="menu clearfix">
@@ -53,7 +54,7 @@
         <div class="col-sm-6">
           <h2>How do I sign up?</h2>
           <ol>
-            <li>Fill out the <a href="#!/contact">contact form</a> and schedule your free 15 minute informational call.</li>
+            <li>Fill out the <a to-top href="#!/contact">contact form</a> and schedule your free 15 minute informational call.</li>
             <li>Discuss the Ketogenic Diet with your physician.</li>
             <li>Send the referral form and diet description to your physician.</li>
           </ol>            
@@ -119,10 +120,16 @@
   <div class="subfooter clearfix">
     <div class="container-fluid">
       <div class="row">
-        <p ng-controller="DateController" class="text-center">&copy;{{date}} Ketogenic Therapies, LLC</p>
+        <div class="col-sm-8 col-sm-offset-2 col-xs-9">
+          <p ng-controller="DateController" class="copy">&copy;{{date}} Ketogenic Therapies, LLC</p>
+        </div>
+        <div class="col-sm-2 col-xs-3">
+          <p class="to-top"><a to-top href="" title="Back to top"><i class="glyphicon glyphicon-circle-arrow-up"></i></a></p>
+        </div>
       </div>
     </div>
   </div>
+</div>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

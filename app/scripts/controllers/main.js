@@ -3,6 +3,7 @@
 angular.module('ketoApp')
 
 .controller('MainController', function($scope) {
+  
 })
 .controller('DateController', function($scope) {
   $scope.date = new Date().getFullYear();

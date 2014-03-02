@@ -18,5 +18,16 @@ angular.module('ketoApp')
         ele.slideToggle(1000);
       });
     }
+  }
+})
+.directive('toTop', function() {
+  return {
+    link: function(scope, ele) {
+      ele.click(function() {
+        $('html, body').animate({
+          scrollTop: $("#header").offset().top
+        }, 500);
+      });
+    }
   };
 });

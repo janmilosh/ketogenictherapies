@@ -59,6 +59,10 @@
   .slide-out-button {
     margin: 15px auto;
   }
+
+  p.copy {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -77,7 +81,16 @@
   }
 
   .container-fluid {
-    margin-left: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .notice {
+    padding: 30px 0 20px;
+  }
+
+  .footer {
+    padding: 20px 0;
   }
 
   .menu-left,
@@ -95,6 +108,11 @@
   .nav-pills > li > a {
     border-radius: 0;
   }
+
+  p.copy {
+    font-size: 14px;
+    margin-top: 7px;
+  }
 }
 
 @media
@@ -107,5 +125,8 @@
   
   a, p, ol, ul {
     font-size: 19px;
+  }
+  p.copy {
+    font-size: 15px;
   }
 }
