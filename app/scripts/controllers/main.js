@@ -10,36 +10,6 @@ angular.module('ketoApp')
 })
 .controller('ContactFormController', function($scope, $http, $log, $timeout) {
 
-  // $scope.blurInput = function (event, field) {
-  //   if (event.target.validity.valueMissing) {
-  //     switch (field) {
-  //     case 'name':
-  //       $scope.nameEmpty = true;
-  //       break;
-  //     case 'email':
-  //       $scope.emailEmpty = true;
-  //       break;
-  //     case 'message':
-  //       $scope.messageEmpty = true;
-  //       break;
-  //     }
-  //   }
-  // };
-
-  // $scope.focusInput = function (event, field) {
-  //   switch (field) {
-  //   case 'name':
-  //     $scope.nameEmpty = false;
-  //     break;
-  //   case 'email':
-  //     $scope.emailEmpty = false;
-  //     break;
-  //   case 'message':
-  //     $scope.messageEmpty = false;
-  //     break;
-  //   }
-  // };
-
   $scope.result = {};
   $scope.success = false;
   $scope.processing = false;

@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-sm-8">
-		<h1 class="title">Contact the dietitian</h1>
+		<h1 class="title">Contact the Dietitian</h1>
 	</div>
 </div>
 <div class="row">
@@ -8,7 +8,7 @@
 		<div class="contact white-background">
 			<h2>For information or to set up an appointment</h2>
 			<div ng-controller="ContactFormController" id="contact">
-				<form class="form-horizontal" name="contact-form">
+				<form class="form-horizontal" name="contact-form" novalidate>
 					<label for="name">Name</label>
 					<input
 						type="text"
@@ -35,8 +35,39 @@
 						id="message"
 						name="message"
 						placeholder="Please input a brief message."
+						ng-minlength=8
+						ng-maxlength=200
 						required>
 					</textarea>
+
+					<span ng-show="contact-form.name.$dirty
+						&& contact-form.name.$invalid
+						&& contact-form.name.$error.required">
+						Please input your name.
+    			</span>
+
+    			<span ng-show="contact-form.email.$dirty
+						&& contact-form.email.$invalid">
+						<span ng-show="contact-form.email.$error.required">
+							Please input your email.
+						</span>
+						<span ng-show="contact-form.email.$error.email">
+							Please input a valid email.
+						</span>
+					</span>
+
+						
+    			<span ng-show="contact-form.message.$dirty
+						&& contact-form.message.$invalid">
+						<span ng-show="contact-form.message.$error.required
+							|| contact-form.message.$error.minlength">
+							Please input a message
+						</span>
+						<span ng-show="contact-form.message.$error.maxlength">
+							Please input a message of less than 200 characters.
+						</span>
+					</span>
+					
 					<button
 						type="submit"
 						class="btn pull-right"

@@ -24,7 +24,7 @@ angular.module('ketoApp')
   return {
     link: function(scope, ele) {
       ele.click(function() {
-        $('body').animate({
+        $('body, html').animate({
           scrollTop: $('#header').offset().top
         }, 500);
       });
@@ -36,10 +36,10 @@ angular.module('ketoApp')
     link: function(scope, ele) {
       ele.click(function() {
         $timeout(function(next, current) {
-          $('body').animate({
+          $('body, html').animate({
             scrollTop: $('#video').offset().top
           }, 500);
-        }, 600);
+        }, 400);
       });
     }
   };
