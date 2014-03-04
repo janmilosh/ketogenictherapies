@@ -35,7 +35,7 @@ angular.module('ketoApp')
   return {
     link: function(scope, ele) {
       ele.click(function() {
-        $timeout(function(next, current) {
+        $timeout(function() {
           $('body, html').animate({
             scrollTop: $('#video').offset().top
           }, 500);
@@ -43,4 +43,27 @@ angular.module('ketoApp')
       });
     }
   };
-});
+})
+.directive('ngFocus',[function() {
+  var FOCUS_CLASS = 'ng-focused';
+  return {
+    restrict: 'A',
+    require: 'ngModel',
+    link: function(scope, element, attrs, ctrl) {
+      ctrl.$focused = false;
+      element.bind('focus', function() {
+        element.addClass(FOCUS_CLASS);
+        scope.$apply(function() {
+          ctrl.$focused = true;
+        });
+      }).bind('blur', function() {
+        element.removeClass(FOCUS_CLASS);
+        scope.$apply(function() {
+          ctrl.$focused = false;
+        });
+      });
+    }
+  };
+}]);
+
+
