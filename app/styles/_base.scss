@@ -45,12 +45,13 @@ h1.title {
 
 h1.logo {
   font-family: 'Libre Baskerville', serif;
+  font-family: 'Sorts Mill Goudy', serif;
   width: 305px;
-  margin: 7px 0;
+  margin: 10px 0 5px;
   color: white;
   float: left;
   a {
-    font-size: 22px;
+    font-size: 25px;
   }
 }
 
@@ -158,6 +159,7 @@ a.btn {
 .white-background {
   background: #fff;
   padding: 20px;
+  margin-bottom: 30px;
   border-radius: 6px;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
@@ -179,7 +181,7 @@ a.btn {
 
 .main-content {
   padding-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   min-height: 500px;
 }
 
