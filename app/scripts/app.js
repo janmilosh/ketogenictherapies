@@ -2,7 +2,9 @@
 
 angular.module('ketoApp', [
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'angulartics',
+  'angulartics.google.analytics'
 ])
 .config(function ($routeProvider, $locationProvider) {
 
