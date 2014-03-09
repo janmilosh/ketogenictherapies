@@ -2,8 +2,12 @@
 
 angular.module('ketoApp')
 
-.controller('MainController', function($scope) {
-  
+.controller('MainController', function($scope, $location, $window) {
+  //This function makes Google Analytics work with Angular
+  $scope.$on('$viewContentLoaded', function() {
+    console.log('In the function');
+    $window._gaq.push(['_trackPageview', $location.path()]);
+  });
 })
 .controller('DateController', function($scope) {
   $scope.date = new Date().getFullYear();
@@ -28,7 +32,7 @@ angular.module('ketoApp')
 
     $http.post('contact.php', data)
     .success(function(status, data) {
-      $scope.success = true;      
+      $scope.success = true;
       $log.info(status, data);
     })
     .error(function(status, data) {
