@@ -1,12 +1,72 @@
-<h2>Class Dates</h2>    
-<p class="dates">
-	May 7, 2014<br>
-	June 11, 2014<br>
-	July 16, 2014<br>
-	September 10, 2014<br>
-	October 8, 2014<br>
-	November 5, 2014<br>
-</p>
-<p><span class="location">Location:</span>&nbsp;&nbsp;Dundee, Michigan</p>
-<p>Please plan to attend one class or set up an individual session.</p>
-  
+<div ng-controller="ContactFormController" class="white-background">
+  <h2>For information or to set up an appointment</h2>
+  <div ng-controller="ContactFormController" id="contact">
+    <form class="form-horizontal" name="contactform" novalidate>
+        <label for="name">Name</label>
+        <input
+            type="text"
+            class="form-control"
+            ng-model="contact.name"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required>
+        <div class="error" ng-show="contactform.name.$dirty && contactform.name.$invalid">
+            <p ng-show="contactform.name.$error.required">
+                Please input your name.
+            </p>
+        </div>
+        <label for="email">Email Address</label>
+        <input
+            type="email"
+            class="form-control"
+            ng-model="contact.email"
+            id="email"
+            name="email"
+            placeholder="Your email address"
+            ng-focus
+            required>
+        <div class="error" ng-show="contactform.email.$dirty && contactform.email.$invalid && !contactform.email.$focused">
+            <p ng-show="contactform.email.$error.email">
+                Please input a valid email.
+            </p>
+            <p ng-show="contactform.email.$error.required">
+                Please input your email.
+            </p>
+        </div>
+        <label for="message">Message</label>
+        <textarea
+            rows="6"
+            class="form-control"
+            ng-model="contact.message"
+            id="message"
+            name="message"
+            placeholder="Please input a brief message."
+            ng-maxlength=349
+            ng-focus
+            required>
+        </textarea>
+        <div class="error" ng-show="contactform.message.$dirty && contactform.message.$invalid">
+            <p ng-show="contactform.message.$error.required && !contactform.message.$focused">
+                Please input your message.
+            </p>
+            <p ng-show="contactform.message.$error.maxlength">
+                Your message must be less than 350 characters.
+            </p>
+        </div>
+        <div ng-show="success" class="message">
+            <p>Message sent&mdash;we will get back to you soon!</p>
+        </div>
+        <div ng-show="failure" class="message">
+            <p>Sorry, there's been an error.<br>You can email us directly at:<br>deniseATketogenictherapiesDOTcom</p>
+        </div>
+        <div ng-hide="submitted">                   
+            <button
+                ng-disabled="contactform.$invalid"
+                type="submit"
+                class="btn pull-right"
+                ng-click="submit()">Send</button>
+        </div>
+    </form>
+  </div>
+</div>
