@@ -5,7 +5,6 @@ angular.module('ketoApp')
 .controller('MainController', function($scope, $location, $window) {
   //This function makes Google Analytics work with Angular
   $scope.$on('$viewContentLoaded', function() {
-    console.log('In the function');
     $window._gaq.push(['_trackPageview', $location.path()]);
   });
 })

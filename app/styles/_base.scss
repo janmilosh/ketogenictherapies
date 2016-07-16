@@ -6,7 +6,7 @@
 }
 
 body {
-  background: $deepBlue;
+  background: white;
   font-size: 16px;
   color: $darkGrey;
 }
@@ -37,10 +37,8 @@ h1 {
 }
 
 h1.title {
-  color: white;
   font-size: 32px;
   margin: 0 0 25px;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 h1.logo {
@@ -51,7 +49,7 @@ h1.logo {
   color: white;
   float: left;
   a {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 
@@ -62,8 +60,6 @@ h2 {
 
 .classes h2 {
   padding-bottom: 10px;
-  color: $pink;
-  border-bottom: 3px solid $pink;
 }
 
 .home {
@@ -76,6 +72,10 @@ h2 {
   }
 }
 
+h1.home.title {
+  color: $pink;
+}
+
 .diet {
   h2 {
     padding-bottom: 15px;
@@ -84,6 +84,10 @@ h2 {
   h3 {
     color: $green;
   }
+}
+
+h1.diet.title {
+  color: $green;
 }
 
 .program {
@@ -96,6 +100,10 @@ h2 {
   }
 }
 
+h1.program.title {
+  color: $orange;
+}
+
 .kit {
   h2 {
     padding-bottom: 15px;
@@ -104,6 +112,10 @@ h2 {
   h3 {
     color: $lightGrey;
   }
+}
+
+h1.kit.title {
+  color: $lightGrey;
 }
 
 .research {
@@ -116,6 +128,10 @@ h2 {
   }
 }
 
+h1.research.title {
+  color: $blue;
+}
+
 .contact {
   h2 {
     padding-bottom: 15px;
@@ -124,6 +140,10 @@ h2 {
   h3{
     color: $gold;
   }
+}
+
+h1.contact.title {
+  color: $gold;
 }
 
 h3 {
@@ -157,19 +177,17 @@ a.btn {
 }
 
 .white-background {
-  background: #fff;
-  padding: 20px;
+  /*background: white;*/
+  /*padding: 20px;*/
   margin-bottom: 30px;
-  border-radius: 6px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  /*border-radius: 6px;*/
+  /*border: 1px solid $lightGrey;*/
 }
 
 .classes {
   padding: 30px 30px 20px;
-  border: 15px solid $lightestGrey;
-  background: $lightestGrey;
-  background: url('../backgrounds/grey-pattern.png');
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  background: white;
+  border: 1px solid $lightGrey;
   border-radius: 5px;
 }
 
@@ -198,10 +216,12 @@ ul.plain {
   p {
     line-height: 1.6;
     font-size: 18px;
-    color: white;
   }
-  background: $pink;
-  padding: 50px 0 35px;
+  background: white;
+  margin: 50px 0 35px;
+  padding: 20px 20px 8px;
+  border-radius: 6px;
+  border: 1px solid $pink;
 }
 
 td {
@@ -221,7 +241,7 @@ img {
   max-height: 100%;
   max-width: 100%;
   box-shadow: 0 0 4px rgba(0,0,0,0.2);
-  background: #fff;
+  background: white;
 }
 
 img.pull-left {
@@ -230,16 +250,16 @@ img.pull-left {
 
 .header {
   padding: 4px 0 6px;
-  background: $mediumGrey;
+  background: $deepBlue;
 }
 
 .footer {
   padding: 40px 0;
-  background: white;
+  background: $lightestGrey;
 }
 
 .subfooter {
-  background: $darkGrey;
+  background: $deepBlue;
   padding: 15px 0;
   p {
     color: #fff;
