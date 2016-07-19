@@ -132,7 +132,7 @@ h1.research.title {
   color: $blue;
 }
 
-.contact {
+.faq {
   h2 {
     padding-bottom: 15px;
     border-bottom: 4px solid $gold;
@@ -142,7 +142,7 @@ h1.research.title {
   }
 }
 
-h1.contact.title {
+h1.faq.title {
   color: $gold;
 }
 
@@ -164,7 +164,7 @@ a {
   }
 }
 
-a.btn {
+.classes a {
   text-decoration: none;
 }
 
@@ -185,7 +185,7 @@ a.btn {
 }
 
 .classes {
-  padding: 30px 30px 20px;
+  padding: 20px 20px 0px;
   background: white;
   border: 1px solid $lightGrey;
   border-radius: 5px;
@@ -218,7 +218,7 @@ ul.plain {
     font-size: 18px;
   }
   background: white;
-  margin: 50px 0 35px;
+  margin-bottom: 40px;
   padding: 20px 20px 8px;
   border-radius: 6px;
   border: 1px solid $pink;
@@ -280,7 +280,7 @@ p.to-top {
     color: white;
     text-decoration: none;
     &:hover {
-      color: $pink;
+      color: $lightestGrey;
     }
   }
 }
@@ -289,12 +289,24 @@ p.to-top {
   font-size: 30px;
 }
 
+.btn:focus {
+  outline: none;
+}
+
 .btn {
-  background: $gold;
   color: white;
   font-size: 16px;
   text-transform: uppercase;
   box-shadow: none;
+}
+
+.contact-button,
+.download-button {
+  height: 50px;
+}
+
+.contact-button {
+  background: $gold;
   border: 1px solid darken($gold, 10%);
   &:hover {
     background: darken($gold, 10%);
@@ -306,21 +318,8 @@ p.to-top {
   }
 }
 
-.btn:focus {
-  outline: none;
-}
-
-.slide-out-button,
-.download-button {
-  width: 280px;
-  display: block;
-  height: 60px;
-}
-
 .download-button {
   background: $orange;
-  margin: 15px auto 0;
-  padding-top: 18px;
   border: 1px solid darken($orange, 10%);
   &:hover, &:active, &:focus {
     background: darken($orange, 10%);
@@ -329,21 +328,7 @@ p.to-top {
 }
 
 
-.slide-out-button {
-  background: $green;
-  margin: 30px auto 15px;
-  border: 1px solid darken($green, 10%);
-  &:hover, &:active, &:focus {
-    background: darken($green, 10%);
-    color: white;
-  }
-}
-
-.slideout {
-  display: none;
-}
-
-.faq {
+.contact {
   cursor: pointer;
   padding: 0 15px 10px;
   border: 1px solid $lightGrey;

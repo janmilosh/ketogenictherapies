@@ -25,16 +25,16 @@ a.home-button {
   background: $pink;
 }
 
-a.contact-button {
+a.faq-button {
   background: $gold;
 }
 
-.nav > li > a:hover.contact-button {
+.nav > li > a:hover.faq-button {
   background: darken($gold, 10%);
 }
 
-.nav > li > a:active.contact-button,
-.nav > li > a:focus.contact-button {
+.nav > li > a:active.faq-button,
+.nav > li > a:focus.faq-button {
   background: $gold;
 }
 
