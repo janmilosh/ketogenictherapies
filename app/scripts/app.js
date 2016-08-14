@@ -6,7 +6,7 @@ angular.module('ketoApp', [
 ])
 .config(function ($routeProvider, $locationProvider) {
 
-  $locationProvider.html5Mode(true);
+  $locationProvider.hashPrefix('!').html5Mode(false);
   
   $routeProvider
     .when('/', {
