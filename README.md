@@ -11,13 +11,13 @@ Build (do this before depoyment):
 grunt build
 ```
 
-Push to gh-pages:
+Push to Digital Ocean:
 
 ```
-git subtree push --prefix dist origin gh-pages
+git subtree push --prefix dist live master
 ```
 
-Push to gh-pages via alias:
+Push to Digital Ocean via alias:
 
 ```
 deployketo
