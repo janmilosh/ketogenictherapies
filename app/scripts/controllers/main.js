@@ -3,10 +3,7 @@
 angular.module('ketoApp')
 
 .controller('MainController', function($scope, $location, $window) {
-  //This function makes Google Analytics work with Angular
-  $scope.$on('$viewContentLoaded', function() {
-    $window._gaq.push(['_trackPageview', $location.path()]);
-  });
+  
 })
 .controller('DateController', function($scope) {
   $scope.date = new Date().getFullYear();
