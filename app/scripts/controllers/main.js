@@ -27,13 +27,16 @@ angular.module('ketoApp')
     $log.info('Contact form inputs: ', data);
 
     $http.post('contact.php', data)
-    .success(function(status, data) {
+    .success(function(data, status) {
       $scope.success = true;
-      $log.info(status, data);
+      $log.info(data, status);
+      if(data.status !== 200) {
+        $scope.status = false;
+      }
     })
-    .error(function(status, data) {
+    .error(function(data, status) {
       $scope.failure = true;
-      $log.info(status, data);
+      $log.info(data, status);
     });
   };
 });
