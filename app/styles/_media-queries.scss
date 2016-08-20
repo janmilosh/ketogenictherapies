@@ -84,7 +84,7 @@
     width: 285px;
   }
 
-  .nav > li >a {
+  .nav > li > a {
     width: 95px;
     font-size: 15px;
     margin: 0;
@@ -93,6 +93,10 @@
   .nav > li > a,
   .nav-pills > li > a {
     border-radius: 0;
+  }
+
+  .menu-contact-button {
+    padding: 0;
   }
 
   p.copy {

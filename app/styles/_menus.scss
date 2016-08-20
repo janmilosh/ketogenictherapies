@@ -90,6 +90,23 @@ a.research-button {
   background: $blue;
 }
 
+.menu-contact-button {
+  padding: 0 5px;
+  button {
+    background: $green;
+    cursor: pointer;
+    &:hover {
+      background: darken($green, 10%);
+    }
+    &:active {
+      background: $green;
+    }
+    &:focus {
+      background: $green;
+    }
+  }
+}
+
 .nav-pills > li + li {
   margin-left: 0;
 }

@@ -44,19 +44,26 @@
             <li><a class="faq-button" ng-href="/faq">Q &amp; A</a></li>
           </ul>
         </div>
-      </div>
-    </div>
-  </div> 
-  <div class="container-fluid main-content">
-    <div class="row">
-      <div class="col-md-8">
-        <div ng-view></div>
-      </div>
-      <div class="col-md-4">
-        <div class="contact" ng-include="'views/contact.html'"></div>
+        <div class="menu-left clearfix visible-xs menu-contact-button">
+          <button class="btn btn-block">
+            <a to-contact href="" title="Contact the Dietician">Contact the Dietician</a>
+          </button>
+        </div>
       </div>
     </div>
   </div>
+  <div class="main-content-wrapper">
+    <div class="container-fluid main-content">
+      <div class="row">
+        <div class="col-md-8">
+          <div ng-view></div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact" ng-include="'views/contact.html'"></div>
+        </div>
+      </div>
+    </div>
+  </div>  
   <div class="bio clearfix">
     <div class="container-fluid">
       <div class="row">
