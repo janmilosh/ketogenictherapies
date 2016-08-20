@@ -31,6 +31,17 @@ angular.module('ketoApp')
     }
   };
 })
+.directive('toContact', function() {
+  return {
+    link: function(scope, ele) {
+      ele.click(function() {
+        $('body, html').animate({
+          scrollTop: $('#contact').offset().top
+        }, 500);
+      });
+    }
+  };
+})
 .directive('toVideo', function($timeout) {
   return {
     link: function(scope, ele) {
