@@ -3,8 +3,7 @@ label {
 }
 
 form {
-	max-width: 400px;
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 textarea,
@@ -15,34 +14,34 @@ button[type="submit"] {
 }
 
 .error p {
-	margin-top: -5px;
-	color: $pink;
-	background: lighten($pink, 45%);
-	padding: 5px 15px;
-	border-radius: 5px;
+  margin-top: -5px;
+  color: $pink;
+  background: lighten($pink, 45%);
+  padding: 5px 15px;
+  border-radius: 5px;
 }
 
 .message {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .message p {
-	color: white;
-	background: darken($gold, 15%);
-	border-radius: 5px;
-	text-align: center;
-	padding: 5px 15px;
+  color: white;
+  background: darken($gold, 15%);
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px 15px;
 }
 
 .form-control {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 .contact .btn:focus {
-	color: white;
+  color: white;
 }
 
 #contact h1 {
-	font-size: 20px;
-	color: $gold;
+  font-size: 20px;
+  color: $gold;
 }

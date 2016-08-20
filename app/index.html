@@ -19,6 +19,7 @@
   <!-- build:css({.tmp,app}) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body ng-app="ketoApp">
   <!--[if lt IE 9]>
@@ -47,7 +48,14 @@
     </div>
   </div> 
   <div class="container-fluid main-content">
-    <div ng-view></div>
+    <div class="row">
+      <div class="col-md-8">
+        <div ng-view></div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact" ng-include="'views/contact.html'"></div>
+      </div>
+    </div>
   </div>
   <div class="bio clearfix">
     <div class="container-fluid">

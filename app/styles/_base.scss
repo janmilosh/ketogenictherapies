@@ -300,8 +300,7 @@ p.to-top {
   box-shadow: none;
 }
 
-.contact-button,
-.download-button {
+.contact-button {
   height: 50px;
 }
 
@@ -329,10 +328,10 @@ p.to-top {
 
 
 .contact {
-  cursor: pointer;
-  padding: 0 15px 10px;
+  padding: 20px 15px 10px;
   border: 1px solid $lightGrey;
   border-radius: 5px;
+  max-width: 440px;
 }
 
 /* Responsive video */
