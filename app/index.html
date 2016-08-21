@@ -45,9 +45,7 @@
           </ul>
         </div>
         <div class="menu-left clearfix visible-xs menu-contact-button">
-          <button class="btn btn-block">
-            <a to-contact href="" title="Contact the Dietitian">Contact the Dietitian</a>
-          </button>
+          <a ng-href="/contact"><button class="btn btn-block">Contact the Dietitian</button></a>
         </div>
       </div>
     </div>
@@ -59,7 +57,7 @@
           <div ng-view></div>
         </div>
         <div class="col-md-4">
-          <div class="contact" ng-include="'views/contact.html'"></div>
+          <div class="contact" ng-include="'views/contact-form.html'"></div>
         </div>
       </div>
     </div>

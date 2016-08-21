@@ -91,6 +91,12 @@ a.research-button {
 }
 
 .menu-contact-button {
+  .btn:hover, .btn:visited, .btn:active, .btn:focus {
+    color: white;
+  }
+} 
+
+.menu-contact-button {
   padding: 0 5px;
   button {
     background: $green;
