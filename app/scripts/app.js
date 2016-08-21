@@ -27,6 +27,9 @@ angular.module('ketoApp', [
     .when('/faq', {
       templateUrl: 'views/faq.html'
     })
+    .when('/contact', {
+      templateUrl: 'views/contact.html'
+    })
     .otherwise({
       redirectTo: '/'
     });
