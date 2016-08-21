@@ -2,7 +2,7 @@
 
 angular.module('ketoApp')
 
-.controller('MainController', function($scope, $location, $window) {
+.controller('MainController', function() {
   
 })
 .controller('DateController', function($scope) {
