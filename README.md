@@ -11,13 +11,13 @@ Build (do this before depoyment):
 grunt build
 ```
 
-Push to Digital Ocean:
+Commit build changes to master branch and push to github, then push to Digital Ocean:
 
 ```
 git subtree push --prefix dist live master
 ```
 
-Push to Digital Ocean via alias:
+Or push to Digital Ocean via alias:
 
 ```
 deployketo
