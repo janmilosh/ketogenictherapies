@@ -25,6 +25,15 @@ p.dates {
   margin-right: 20px;
 }
 
+p.conditions {
+  font-size: 14px;
+}
+
+sup {
+  font-size: 20px;
+  top: 1px;
+}
+
 .location {
   font-weight: bold;
   color: $pink;
@@ -130,6 +139,12 @@ h1.kit.title {
   }
   h3 {
     color: $blue;
+  }
+  a h3 {
+    font-size: 18px;
+  }
+  p {
+    margin-top: 20px;
   }
 }
 
