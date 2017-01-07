@@ -2,7 +2,7 @@
 
 git checkout master
 git pull
-grunt build
+grunt build --force
 git add .
 git commit -m "New build"
 git push
