@@ -25,7 +25,7 @@ If git won't allow the push, can try this:
 git push live `git subtree split --prefix dist master`:master --force
 ```
 
-Or push to Digital Ocean via alias (after building, committing, and pushing changes):
+Or push to Digital Ocean via script (after building, committing, and pushing changes):
 
 ```
 ./deploy
