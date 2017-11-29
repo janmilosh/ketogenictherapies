@@ -79,29 +79,6 @@
     padding: 20px 0;
   }
 
-  .menu-left {
-    width: 285px;
-  }
-
-  .menu-right {
-    width: 190px;
-  }
-
-  .nav > li > a {
-    width: 95px;
-    font-size: 15px;
-    margin: 0;
-  }
-
-  .nav > li > a,
-  .nav-pills > li > a {
-    border-radius: 0;
-  }
-
-  .menu-contact-button {
-    padding: 0;
-  }
-
   p.copy {
     font-size: 14px;
     margin-top: 7px;
@@ -114,8 +91,8 @@
   only screen and (     -o-min-device-pixel-ratio: 2/1),
   only screen and (        min-device-pixel-ratio: 2),
   only screen and (                min-resolution: 192dpi),
-  only screen and (                min-resolution: 2dppx) { 
-  
+  only screen and (                min-resolution: 2dppx) {
+
   a, p, ol, ul {
     font-size: 19px;
   }
