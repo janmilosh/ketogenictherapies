@@ -6,13 +6,14 @@
 }
 
 body {
-  background: $deepBlue;
   font-size: 16px;
   color: $darkGrey;
+  background: darken($blue, 15%);
 }
 
 p, a {
   font-size: 16px;
+  line-height: 1.6;
 }
 
 a {
@@ -42,7 +43,8 @@ sup {
 h1, h2, h3 {
   margin: 0 0 16px;
   color: $darkGrey;
-  font-weight: normal;
+  font-weight: 200;
+  letter-spacing: 1px;
 }
 
 h1 {
@@ -59,87 +61,48 @@ h1.logo {
   font-family: 'Sorts Mill Goudy', serif;
   width: 305px;
   width: 380px;
-  margin: 10px 0 5px;
-  color: white;
+  margin: 5px 0 5px;
+  color: $green;
   float: left;
   a {
     font-size: 30px;
+    color: $green;
+    &:hover {
+      color: $green;
+    }
   }
 }
 
 h2 {
   font-size: 25px;
   color: $headingGrey;
+  padding-bottom: 15px;
 }
 
 .classes h2 {
   padding-bottom: 10px;
 }
 
-.home {
-  h2 {
-    padding-bottom: 15px;
-    border-bottom: 4px solid $pink;
-  }
-  h3 {
-    color: $pink;
-  }
-}
-
 h1.home.title {
   color: $pink;
 }
 
-.diet {
-  h2 {
-    padding-bottom: 15px;
-    border-bottom: 4px solid $green;
-  }
-  h3 {
-    color: $green;
-  }
-}
 
 h1.diet.title {
-  color: $green;
+  color: $gold;
 }
 
-.program {
-  h2 {
-    padding-bottom: 15px;
-    border-bottom: 4px solid $orange;
-  }
-  h3 {
-    color: $orange;
-  }
-}
 
 h1.program.title {
-  color: $orange;
+  color: $blue;
 }
 
-.kit {
-  h2 {
-    padding-bottom: 15px;
-    border-bottom: 4px solid $lightGrey;
-  }
-  h3 {
-    color: $lightGrey;
-  }
-}
 
 h1.kit.title {
   color: $mediumLightGrey;
 }
 
 .research {
-  h2 {
-    padding-bottom: 15px;
-    border-bottom: 4px solid $blue;
-  }
-  h3 {
-    color: $blue;
-  }
   a h3 {
     font-size: 18px;
   }
@@ -149,18 +112,9 @@ h1.kit.title {
 }
 
 h1.research.title {
-  color: $blue;
+  color: $orange;
 }
 
-.faq {
-  h2 {
-    padding-bottom: 15px;
-    border-bottom: 4px solid $gold;
-  }
-  h3{
-    color: $gold;
-  }
-}
 
 h1.faq.title {
   color: $gold;
@@ -169,27 +123,24 @@ h1.faq.title {
 h3 {
   font-size: 20px;
   margin: 16px 0 10px;
+  color: $headingGrey;
 }
 
 .bio {
   padding: 40px 0 50px;
-  background: $lightestGrey;
+  background: lighten($lightestGrey, 5%);
   h3 {
     margin-bottom: 15px;
   }
 }
 
 a {
-  color: darken($blue, 7%);
-  text-decoration: underline;
+  color: lighten($blue, 10%);
+  text-decoration: none;
   &:hover {
-  text-decoration: none;
-  color: darken($blue, 7%);
+    text-decoration: underline;
+    color: lighten($blue, 10%);
   }
-}
-
-.classes a {
-  text-decoration: none;
 }
 
 .header a {
@@ -206,13 +157,6 @@ a {
   margin-bottom: 30px;
   /*border-radius: 6px;*/
   /*border: 1px solid $lightGrey;*/
-}
-
-.classes {
-  padding: 20px 20px 2px;
-  background: white;
-  border: 1px solid $lightGrey;
-  border-radius: 5px;
 }
 
 .container-fluid {
@@ -261,7 +205,7 @@ td {
   text-align: right;
 }
 
-img {
+.bio img {
   max-height: 100%;
   max-width: 100%;
   box-shadow: 0 0 4px rgba(0,0,0,0.2);
@@ -272,17 +216,22 @@ img.pull-left {
   margin-right: 12px;
 }
 
+h1 img {
+  width: 50px;
+  margin-right: 20px;
+}
+
 .header {
   padding: 4px 0 6px;
-  background: $deepBlue;
+  background: $lightestGrey;
 }
 
 .footer {
-  background: lighten($deepBlue, 7%)
+  background: darken($blue, 5%);
 }
 
 .subfooter {
-  background: $deepBlue;
+  background: darken($blue, 15%);
   padding: 15px 0;
   p {
     color: #fff;
