@@ -1,6 +1,6 @@
 .nav > li > a {
   color: #fff;
-  padding: 5px 8px;
+  padding: 6px 8px;
   font-size: 16px;
   text-transform: uppercase;
   border-radius: 3px;
@@ -52,42 +52,42 @@ a.kit-button {
 }
 
 a.diet-button {
-  background: $green;
+  background: $gold;
 }
 
 .nav > li > a:hover.diet-button {
-  background: darken($green, 10%);
+  background: darken($gold, 10%);
 }
 
 .nav > li > a:active.diet-button,
 .nav > li > a:focus.diet-button {
-  background: $green;
+  background: $gold;
 }
 
 a.program-button {
-  background: $orange;
+  background: $blue;
 }
 
 .nav > li > a:hover.program-button {
-  background: darken($orange, 10%);
+  background: darken($blue, 10%);
 }
 
 .nav > li > a:active.program-button,
 .nav > li > a:focus.program-button {
-  background: $orange;
-}
-
-a.research-button {
   background: $blue;
 }
 
+a.research-button {
+  background: $orange;
+}
+
 .nav > li > a:hover.research-button {
-  background: darken($blue, 10%);
+  background: darken($orange, 10%);
 }
 
 .nav > li > a:active.research-button,
 .nav > li > a:focus.research-button {
-  background: $blue;
+  background: $orange;
 }
 
 .menu-contact-button {

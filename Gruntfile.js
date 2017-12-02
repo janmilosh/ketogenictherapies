@@ -285,6 +285,7 @@ module.exports = function (grunt) {
             'sitemap.xml',
             'contact.php',
             'backgrounds/*',
+            'svg-images/*',
             'downloads/*',
             'views/{,*/}*.html',
             'bower_components/**/*',
