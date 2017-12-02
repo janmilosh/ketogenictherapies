@@ -16,6 +16,12 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  p.copy {
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 600px) {
   h1.logo {
     margin: 4px 0;
@@ -45,10 +51,6 @@
 
   h1 img {
     display: none;
-  }
-
-  p.copy {
-    text-align: left;
   }
 }
 
