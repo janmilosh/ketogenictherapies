@@ -61,7 +61,7 @@ h1.logo {
   font-family: 'Sorts Mill Goudy', serif;
   width: 305px;
   width: 380px;
-  margin: 10px 0 5px;
+  margin: 5px 0;
   color: $green;
   float: left;
   a {
@@ -240,12 +240,14 @@ h1 img {
   }
 }
 
-.svg-recognition p, a, a:hover {
-  color: darken($blue, 8%);
-  font-size: 12px;
-  line-height: 1;
-  margin-bottom: 0;
-  margin-top: -15px;
+.svg-recognition {
+  p, a, a:hover {
+    color: darken($blue, 8%);
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: -15px;
+  }
 }
 
 p.copy {
