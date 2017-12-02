@@ -16,7 +16,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   h1.logo {
     margin: 4px 0;
   }
@@ -43,31 +43,12 @@
     margin: 0;
   }
 
-  .classes {
-    margin-top: 30px;
-  }
-
-  .supplement {
-    padding-bottom: 30px;
-    padding-top: 30px;
-  }
-
-  .download-button {
-    margin: 35px auto 0;
-  }
-
-  .slide-out-button {
-    margin: 15px auto;
+  h1 img {
+    display: none;
   }
 
   p.copy {
     text-align: left;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  h1 img {
-    display: none;
   }
 }
 
