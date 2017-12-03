@@ -3,6 +3,7 @@
     width: 100%;
     float: none;
     padding: 0;
+    margin: 4px 0 0;
     text-align: center;
   }
 
@@ -12,7 +13,11 @@
 
   .menu {
     float: none;
-    margin: 8px auto;
+    margin: 0 auto 8px;
+  }
+
+  .nav {
+    margin: 0;
   }
 }
 
@@ -23,10 +28,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  h1.logo {
-    margin: 4px 0;
-  }
-
   .menu-left,
   .menu-right {
     float: none;
@@ -35,10 +36,6 @@
 
   .menu {
     width: 100%;
-  }
-
-  .nav {
-    margin: 0;
   }
 
   .menu-left {
