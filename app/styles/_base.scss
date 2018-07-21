@@ -27,6 +27,7 @@ p.dates {
 }
 
 p.conditions {
+margin: 25px 0 0;
   font-size: 14px;
 }
 
@@ -111,7 +112,7 @@ h1.faq.title {
 
 h3 {
   font-size: 20px;
-  margin: 16px 0 10px;
+  margin: 20px 0 12px;
   color: $headingGrey;
 }
 
@@ -292,6 +293,24 @@ p.to-top {
   border: 1px solid $lightGrey;
   border-radius: 5px;
   max-width: 440px;
+}
+
+.grey-box {
+  background: $lightestGrey;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.testimonial {
+  background: lighten($pink, 43%);
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.testimonial.light {
+  background: lighten($pink, 48%)
 }
 
 /* Responsive video */
