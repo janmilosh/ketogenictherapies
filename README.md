@@ -8,10 +8,13 @@ grunt serve
 Build (do this before depoyment):
 
 ```
+grunt build
+```
+If errors, try:
+
+```
 grunt build --force
 ```
-
-Note: due to problems with imagemin, it's necessary to build with force at this time.
 
 Commit build changes to master branch and push to github, then push to Digital Ocean:
 
